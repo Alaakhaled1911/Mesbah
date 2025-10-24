@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Mesbah</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header with Breadcrumbs -->
+    <header class="page-header">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> >
+        <span class="current">Products</span>
+      </div>
+      <div class="page-logo">
+        <span class="logo-icon">
+          <svg
+            width="36"
+            height="48"
+            viewBox="0 0 36 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 27.6027H17.25L36 0.0272486H25.125C21.225 -0.201356 18.3224 0.974679 15.625 4.88506L0 27.6027Z"
+              fill="#F1890E"
+            />
+            <path
+              d="M36.0007 27.8438H17.15C14.6891 44.3086 28.6733 48.1393 36.0007 47.9965V27.8438Z"
+              fill="#808DD3"
+            />
+          </svg>
+        </span>
+        <span class="logo-text">Mesbah</span>
+      </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+      <!-- Filter Section (moved here so it sits above the ads and products grid) -->
+      <div class="filter-section">
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="category">Category</label>
+            <select id="category" class="filter-select">
+              <option value="all">All Categories</option>
+              <option value="laptops">Laptops</option>
+              <option value="desktops">Desktops</option>
+              <option value="accessories">Accessories</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="brand">Brand</label>
+            <select id="brand" class="filter-select">
+              <option value="any">Any Brand</option>
+              <option value="apple">Apple</option>
+              <option value="dell">Dell</option>
+              <option value="hp">HP</option>
+              <option value="lenovo">Lenovo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Left Ad -->
+      <div class="left-ad">
+        <div class="ad-content">
+          <div class="ad-image building-ad">
+            <div class="cola-size">
+              <div class="ad-text">
+                <span class="blog-badge">Blog</span>
+                <h3>Ana Kursova</h3>
+                <p>Masterclass in Design Thinking, Innovation & Creativity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Content -->
+      <div class="center-content">
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Product Card 1 -->
+          <!-- Special "Can't Find What You're Looking For?" Card -->
+          <div class="product-card special-card">
+            <div class="card-info">
+              <div class="special-content">
+                <h3>Can't Find What You're Looking For?</h3>
+                <button
+                  class="cta-button primary"
+                  onclick="window.location.href='order.html'"
+                >
+                  Order anything you want
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-badge discount">32% OFF</div>
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button
+                  class="action-btn primary"
+                  onclick="window.location.href='order-success.html'"
+                >
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html?id=macbook-m1'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <div class="product-badge hot">HOT</div>
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <div class="product-badge discount">32% OFF</div>
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <div class="product-badge discount">32% OFF</div>
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card">
+            <div class="product-badge sold-out">SOLD OUT</div>
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Card 9 -->
+          <div class="product-card">
+            <div class="product-image"></div>
+            <div class="card-info">
+              <div class="product-price">$66.00</div>
+              <div class="product-name">Rancho Vista Verde</div>
+              <div class="product-desc">
+                77 Lakeview Court, Orlando, FL 32801 77 Lakeview Court, Orlando,
+                FL 32801 77 La...
+              </div>
+              <div class="product-actions">
+                <button class="action-btn primary">
+                  Order This Product
+                  <svg
+                    width="24"
+                    height="16"
+                    viewBox="0 0 24 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2787 0.196289C13.6885 2.24547 15.7377 6.63891 20.6557 7.81924C18.1967 8.80285 13.2787 11.6553 13.2787 15.1963"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                    <path
+                      d="M0 8.06494L20.6557 8.06494"
+                      stroke="white"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn"
+                  onclick="window.location.href='product.html'"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.25C4.5 4.25 1.5 12 1.5 12C1.5 12 4.5 19.75 12 19.75C19.5 19.75 22.5 12 22.5 12C22.5 12 19.5 4.25 12 4.25Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                      stroke="#212121"
+                      stroke-width="1.50099"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Ad -->
+      <div class="right-ad">
+        <div class="ad-content">
+          <div class="ad-image cola-ad">
+            <div class="cola-size">
+              <div class="ad-text">
+                <span class="blog-badge">Blog</span>
+                <h3>Ana Kursova</h3>
+                <p>Masterclass in Design Thinking, Innovation & Creativity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <svg
+              width="36"
+              height="48"
+              viewBox="0 0 36 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 27.6027H17.25L36 0.0272486H25.125C21.225 -0.201356 18.3224 0.974679 15.625 4.88506L0 27.6027Z"
+                fill="#F1890E"
+              />
+              <path
+                d="M36.0007 27.8438H17.15C14.6891 44.3086 28.6733 48.1393 36.0007 47.9965V27.8438Z"
+                fill="white"
+              />
+            </svg>
+            <span class="logo-text">Mesbah</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="copyright">© Copyright 2022, All Rights Reserved</div>
+        </div>
+        <div class="footer-right">
+          <h3>Can't Find What You're Looking For?</h3>
+          <button
+            class="footer-cta"
+            onclick="window.location.href='order.html'"
+          >
+            Order anything you want
+            <svg
+              width="24"
+              height="16"
+              viewBox="0 0 24 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.2786 0.196289C13.6884 2.24547 15.7376 6.63891 20.6556 7.81924C18.1966 8.80285 13.2786 11.6553 13.2786 15.1963"
+                stroke="#F1890E"
+                stroke-width="2"
+              />
+              <path
+                d="M0 8.06494L20.6557 8.06494"
+                stroke="#F1890E"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/common.js"></script>
+  </body>
+</html>

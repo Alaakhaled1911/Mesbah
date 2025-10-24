@@ -25,6 +25,7 @@ img, picture, video, svg {
     --color-muted: #727272; 
     --radius: 12px;
     --radius-sm: 8px;
+      --gap: 20px;
    
 }
 
@@ -1553,6 +1554,11 @@ white-space: nowrap;
         grid-template-columns: 1fr;
     }
     
+.special-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
     .section-header h2 {
     font-size: 28px;

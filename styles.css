@@ -881,6 +881,10 @@ border-radius: var(--radius);
 
 
 
+.form-group {
+    margin-bottom: 28px;
+}
+
 .form-group label {
     display: block;
     font-size: 14px;
@@ -941,7 +945,6 @@ input[type="text"],textarea {
 /* Budget Range Slider Styles */
 .budget-slider {
     width: 100%;
-    padding: 30px 0;
     overflow: hidden;
 }
 
@@ -1001,11 +1004,8 @@ input[type="text"],textarea {
 
 .budget-inputs {
     display: flex;
-    justify-content: space-between;
     margin: 0;
-    position: absolute;
     gap: 20px;
-   
 }
 
 .budget-input {
@@ -1146,10 +1146,6 @@ input[type="text"],textarea {
 
 
 
-/* General Form Specific Styles */
- .form-group {
-    margin-bottom: 28px;
-}
 
  .next-btn {
     width: 100%;
@@ -1488,6 +1484,7 @@ white-space: nowrap;
     
     .form-row {
         grid-template-columns: 1fr;
+        gap: 0;
     }
     
     .footer-content {

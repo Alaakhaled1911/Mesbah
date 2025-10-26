@@ -38,23 +38,8 @@ img, picture, video, svg {
     justify-content: center;
 }
 
-.logo-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-}
 
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #212121;
-}
+
 
 /* Hero Section */
 .hero-section {
@@ -622,12 +607,6 @@ border-radius: var(--radius);
   
 }
 
-.page-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-}
 
 .product-section {
     display: flex;
@@ -1430,15 +1409,8 @@ input[type="text"],textarea {
     margin-bottom: 20px;
 }
 
-.footer-logo .logo-icon {
-    background: linear-gradient(45deg, #F1890E, #FFA500);
-}
 
-.footer-logo .logo-text {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-}
+
 
 .footer-left p {
     color: rgba(255, 255, 255, 0.8);

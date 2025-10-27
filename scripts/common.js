@@ -167,6 +167,7 @@
     toInput.oninput = () => {
       controlToInput(toSlider, fromInput, toInput, fromSlider);
     };
+    fillSlider(fromInput, toInput, toSlider, sliderRange);
   }
 
   /* --------------------- Image upload area --------------------- */

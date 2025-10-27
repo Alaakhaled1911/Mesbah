@@ -140,15 +140,6 @@
       }%`;
     }
 
-    function setToggleAccessible(currentTarget) {
-      const toSlider = qs("#toSlider");
-      if (Number(currentTarget.value) <= 0) {
-        toSlider.style.zIndex = 2;
-      } else {
-        toSlider.style.zIndex = 0;
-      }
-    }
-
     fromSlider.oninput = () => {
       const value = Math.min(
         parseInt(fromSlider.value, 10),
@@ -262,7 +253,6 @@
   /* ---------------------------- Init --------------------------- */
   async function init() {
     // Inject components if placeholders exist
-    await injectComponent("components/header.html", "header.page-header");
     await injectComponent("components/footer.html", "footer.footer");
 
     // Wire behaviors (order matters doesn't matter much)
